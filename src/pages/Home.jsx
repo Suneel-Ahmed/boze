@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className='w-full h-screen flex justify-center items-center bg-black'  >
+    <div className='w-full h-screen flex justify-center items-center '  >
         <h1 className='text-[70px] text-white'>HOME Page</h1>
     </div>
   )
