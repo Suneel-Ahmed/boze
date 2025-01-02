@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import Nav from '../data/navData';
+import { Link } from 'react-router-dom';
+import { FaTelegram , FaYoutube , FaInstagram  } from "react-icons/fa";
+import { FaSquareThreads } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -11,24 +15,27 @@ const Navbar = () => {
     <div className="navbar  h-20">
      
       <div className="navbar-start  w-full lg:items-center lg:justify-between hidden lg:flex">
-      <a className="btn btn-ghost text-white text-xl">BOZE COIN</a>
-        <ul className="menu menu-horizontal gap-[30px] lg:items-center text-white px-1">
-          <li>
-           Blog
+      <Link to={'/'} className='text-white text-2xl font-bold quicksand '  > BOZE COIN</Link>
+     
+        <ul className="menu menu-horizontal quicksand  text-2xl lg:items-center text-white px-1">
+          {
+            Nav && Nav?.map((val, key)=>(
+            <li key={key}  >
+                {
+                    val.title === 'telegram' ? <Link to={val?.link} target='_blank' className='text-white' ><FaTelegram/></Link> :
+                    val.title === 'youtube' ? <Link to={val?.link} target='_blank' className='text-white' ><FaYoutube/> </Link> :
+                    val.title === 'instagram' ? <Link to={val?.link} target='_blank' className='text-white' ><FaInstagram/></Link> :
+                    val.title === 'threads' ? <Link to={val?.link} target='_blank' className='text-white' ><FaSquareThreads/> </Link> :
+          <Link to={val?.link} className='text-white' > {val?.title}</Link>
+                }
           </li>
-          <li>
-            Icons
-          </li>
-          <li>
-            Icons
-          </li>
-          <li>
-            Icons
-          </li>
+            ))
+          }
+
         </ul>
       </div>
       <div className="navbar-start relative lg:hidden  w-full flex justify-between items-center">
-      <a className="btn btn-ghost text-white text-xl uppercase">Boze Coin</a>
+      <Link to={'/'} className='text-white font-bold text-xl quicksand' > BOZE COIN</Link>
         <div className="dropdown   ">
           <div
             tabIndex={0}
@@ -41,14 +48,15 @@ const Navbar = () => {
         </div>
           {isDropdownOpen && (
             <ul
-              className="menu absolute top-[50px] menu-vertical dropdown-content text-white  rounded-box z-[1] bg-black   mt-3 w-full min-w-max p-2 shadow"
+              className="menu absolute top-[50px] menu-vertical space-y-5 dropdown-content text-white  rounded-box z-[1] bg-black   mt-3 w-full min-w-max p-2 shadow"
             >
-              <li>
-                <a className="active">Parent</a>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              {
+            Nav && Nav?.map((val, key)=>(
+            <li key={key}  >
+          <Link to={val?.link} className='text-white' > {val?.title}</Link>
+          </li>
+            ))
+          }
             </ul>
           )}
       </div>
