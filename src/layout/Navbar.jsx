@@ -12,10 +12,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar  h-20">
+    <div className="navbar  h-24">
      
       <div className="navbar-start  w-full lg:items-center lg:justify-between hidden lg:flex">
-      <Link to={'/'} className='text-white text-2xl font-bold quicksand '  > BOZE COIN</Link>
+      <Link to={'/'} className='text-white text-2xl font-bold quicksand '  > 
+      <img src="/images/logo.png" alt="boze" className='w-[75px] h-auto' />
+      </Link>
      
         <ul className="menu menu-horizontal quicksand  text-2xl lg:items-center text-white px-1">
           {
