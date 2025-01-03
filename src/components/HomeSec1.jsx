@@ -12,11 +12,11 @@ const HomeSec1 = () => {
     useGSAP(
 		() => {
             gsap.to(image.current, {
-                rotationY: 360, // Flip horizontally
-                duration: 3,    // Duration of the animation
-                ease: 'power2.inOut', // Smooth easing
-                repeat: -1,     // Infinite loop
-                repeatDelay: 1, // Delay between repeats
+                rotationY: 360, 
+                duration: 3,    
+                ease: 'power2.inOut', 
+                repeat: -1,     
+                repeatDelay: 1, 
               });
 		},
 		{ scope: containerRef }
@@ -24,9 +24,9 @@ const HomeSec1 = () => {
 
 
   return (
-    <div ref={containerRef} className='w-full relative h-[90vh] flex flex-col justify-start   items-center '  >
-    <h1 className='text-[110px] z-10 mt-[200px] quicksand font-extrabold text-white'>All Crypto — One App</h1>
-    <img ref={image} className='absolute  opacity-20 w-[600px] mt-[50px]' src="/images/logo.png" alt="boze" />
+    <div ref={containerRef} className='w-full relative h-[90vh] flex flex-col justify-center pb-14   items-center '  >
+    <h1 className='text-[100px] z-10  quicksand font-extrabold text-white'>All Crypto — One App</h1>
+    <img ref={image} className='absolute  opacity-20 w-[500px] mt-[50px]' src="/images/logo.png" alt="boze" />
     
     <Link to={'/'} className='text-center z-10 btn btn-lg  text-[24px] mt-[40px]  ' >Launch Boze on Telegram</Link>
 
