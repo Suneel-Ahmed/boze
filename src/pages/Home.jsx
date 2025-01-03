@@ -1,15 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import HomeSec1 from '../components/HomeSec1';
+import HomeSec2 from '../components/HomeSec2';
 const Home = () => {
   return (
-    <div className='w-full h-[90vh] flex flex-col justify-start   items-center '  >
-        <h1 className='text-[110px] mt-[200px] quicksand font-extrabold text-white'>All Crypto — One App</h1>
-        
-        
-        <Link to={'/'} className='text-center btn btn-lg  text-[24px] mt-[40px]  ' >Launch Boze on Telegram</Link>
-
-        
-    </div>
+  <>
+  <HomeSec1/>
+  <HomeSec2/>
+  </>
   )
 }
 
