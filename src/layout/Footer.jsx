@@ -1,9 +1,52 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
+import { FaTelegram , FaYoutube , FaInstagram , FaCircle } from "react-icons/fa";
+import { FaSquareThreads } from "react-icons/fa6";
+import Nav from '../data/navData';
 const Footer = () => {
   return (
-    <div className='mt-auto' >
-      <h1 className='text-xl text-white' >Hello I am React Footer</h1>
+    <div className='mt-auto px-[clamp(20px,4.3vw,150px)] w-full py-10 ' >
+        <div className='w-full text-white gap-y-[15px] flex min-h-fit flex-col' >
+            <div className='space-y-4'  >
+                <img src="/images/logo.png" alt="bozecoin" className='w-[120px] h-auto' />
+                <p className='w-72 text-md  text-white/50 ' >
+
+                Blum is a community where growth is nurtured, and possibilities bloom
+                </p>
+            </div>
+          
+            <div className='text-white text-lg flex justify-between' >
+
+                <div className='flex items-center text-white   gap-[10px]' >
+                <h4>Contact Support</h4>
+                <h4 className='text-sm my-auto' ><FaCircle/></h4>
+                <h4>Join  Community</h4>
+                </div>
+
+                <div className='flex items-center gap-3' >
+                    <h1>Job Openings</h1>
+                    <h1>Privacy Policy</h1>
+                    <ul className="menu menu-horizontal quicksand  text-2xl lg:items-center text-white px-1">
+          {
+            Nav && Nav?.map((val, key)=>(
+            <li key={key}  >
+                {
+                    val.title === 'telegram' ? <Link to={val?.link} target='_blank' className='text-white' ><FaTelegram/></Link> :
+                    val.title === 'youtube' ? <Link to={val?.link} target='_blank' className='text-white' ><FaYoutube/> </Link> :
+                    val.title === 'instagram' ? <Link to={val?.link} target='_blank' className='text-white' ><FaInstagram/></Link> :
+                    val.title === 'threads' ? <Link to={val?.link} target='_blank' className='text-white' ><FaSquareThreads/> </Link> :
+                    null
+                }
+          </li>
+            ))
+          }
+
+        </ul>
+                </div>
+                
+
+            </div>
+        </div>
     </div>
   )
 }

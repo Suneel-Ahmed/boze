@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar  h-24">
+    <div className="navbar px-[clamp(20px,4.3vw,150px)] h-24">
      
       <div className="navbar-start  w-full lg:items-center lg:justify-between hidden lg:flex">
       <Link to={'/'} className='text-white text-2xl font-bold quicksand '  > 
