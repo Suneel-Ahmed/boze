@@ -22,3 +22,8 @@ body{
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
 }
+
+.yellow-gradient{
+  background: rgb(255,197,70);
+background: linear-gradient(25deg, rgba(255,197,70,1) 35%, rgba(228,161,16,1) 100%);
+}
