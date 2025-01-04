@@ -4,8 +4,10 @@ import Home from './pages/Home';
 import Blogs from './pages/Blogs';
 import SingleBlog from './pages/SingleBlog';
 import Layout from './layout/Layout';
+import useSmoothScroll from './hook/useSmoothScroll';
 
 const App = () => {
+  useSmoothScroll();
   return (
    <Router>
       <Layout>
