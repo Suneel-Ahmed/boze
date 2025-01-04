@@ -17,12 +17,12 @@ const HeadingSec = () => {
                   x: '-100%',
                   scrollTrigger: {
                     trigger: containerRef.current,
-                    start: 'top bottom', // Start when the top of the container reaches the bottom of the viewport
-                    end: 'bottom top',   // End when the bottom of the container reaches the top of the viewport
-                    scrub: 1,            // Smoothly scrubs the animation with the scroll position
-                    markers: false,      // Set to true to visualize the scrollTrigger markers
+                    start: 'top bottom', 
+                    end: 'bottom top',   
+                    scrub: 1,            
+                    markers: false,      
                   },
-                  duration: 5,
+                  duration: 6,
                   ease: 'linear',
                 }
               );
