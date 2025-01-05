@@ -5,9 +5,9 @@ import { FaSquareThreads } from "react-icons/fa6";
 import Nav from '../data/navData';
 const Footer = () => {
   return (
-    <div className='mt-auto px-[clamp(20px,4.3vw,150px)] w-full py-10 ' >
-        <div className='w-full text-white gap-y-[15px] flex min-h-fit flex-col' >
-            <div className='space-y-4'  >
+    <div className='mt-auto px-[clamp(20px,4.3vw,150px)] w-full  py-10 ' >
+        <div className='w-full text-white gap-y-[15px] flex min-h-fit  flex-col' >
+            <div className='space-y-4  '  >
                 <img src="/images/logo.png" alt="bozecoin" className='w-[120px] h-auto' />
                 <p className='w-72 text-md  text-white/50 ' >
 
@@ -15,17 +15,20 @@ const Footer = () => {
                 </p>
             </div>
           
-            <div className='text-white text-lg flex justify-between' >
+            <div className='text-white text-lg max-lg:flex-col  max-lg:items-center flex justify-between' >
 
-                <div className='flex items-center text-white   gap-[10px]' >
+                <div className='flex items-center   max-lg:order-2 text-white   gap-[10px]' >
                 <h4>Contact Support</h4>
                 <h4 className='text-sm my-auto' ><FaCircle/></h4>
                 <h4>Join  Community</h4>
                 </div>
 
-                <div className='flex items-center gap-3' >
+                <div className='flex items-center max-md:flex-col  max-lg:order-1 gap-3' >
+                    <div className='flex gap-[20px]' >
+
                     <h1>Job Openings</h1>
                     <h1>Privacy Policy</h1>
+                    </div>
                     <ul className="menu menu-horizontal quicksand  text-2xl lg:items-center text-white px-1">
           {
             Nav && Nav?.map((val, key)=>(
