@@ -25,14 +25,14 @@ const HomeSec1 = () => {
 
   return (
     <div ref={containerRef} className='w-full relative h-[90vh] flex flex-col justify-center pb-14   items-center '  >
-    <h1 className='text-[100px] z-10  quicksand font-extrabold text-white'>All Crypto — One App</h1>
+    <h1 className='text-[clamp(30px,6.3vw,130px)] text-center z-10  quicksand font-extrabold text-white'>All Crypto — One App</h1>
     <img ref={image} className='absolute  opacity-20 w-[500px] mt-[50px]' src="/images/logo.png" alt="boze" />
     
-    <Link to={'/'} className='text-center z-10 btn btn-lg  text-[24px] mt-[40px]  ' >Launch Boze on Telegram</Link>
+    <Link to={'/'} className='text-center max-md:btn-md max-md:mt-[30px] z-10 btn btn-lg  text-[24px] mt-[40px]  ' >Launch Boze on Telegram</Link>
 
     <div
 				
-				className='w-full p-[2vw] z-20 absolute bottom-0 flex place-content-center place-items-end'
+				className='w-full p-[2vw] z-20 absolute bottom-0 max-sm:bottom-[70px] flex place-content-center place-items-end'
 			>
 				
 				<span className='flex flex-col place-content-center place-items-center gap-[2vw] lg:gap-[0.5vw]'>

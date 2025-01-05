@@ -51,7 +51,7 @@ const HomeSec2 = () => {
 	);
 
   return (
-    <div ref={containerRef} className='w-full relative min-h-screen py-[70px]  flex justify-center items-center' >
+    <div ref={containerRef} className='w-full overflow-x-hidden relative min-h-screen py-[70px]  flex justify-center items-center' >
         {/* on scroll slide left to right  */}
         <div className='flex absolute top-56 gap-[100px]' >
             {
