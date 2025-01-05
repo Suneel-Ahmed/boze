@@ -63,20 +63,26 @@ const HomeSec3 = ({
               </div>
             </div>
           ) : (
-            <div className="grid grid-cols-2 gap-[5px]">
-              <div className="p-2 text-center rounded-xl text-white/70 bg-white/10">
-                Classic Tokens
-              </div>
-              <div className=" p-2 text-center rounded-xl text-white/70 bg-white/10">
-                Meme Coins
-              </div>
-              <div className=" p-2 text-center px-5 rounded-xl text-white/70 bg-white/10">
-                Hot & Fresh Tokens
-              </div>
-              <div className=" p-2 text-center rounded-xl text-white/70 bg-white/10">
-                L1/L2 Tokens
-              </div>
+            <div className="grid grid-cols-3 gap-[5px]">
+            <div className="p-2 text-center rounded-xl text-white/70 bg-white/10">
+            {container1}
             </div>
+            <div className=" p-2 text-center rounded-xl text-white/70 bg-white/10">
+              {container2}
+            </div>
+            <div className=" p-2 text-center px-5 rounded-xl text-white/70 bg-white/10">
+              {container3}
+            </div>
+            <div className=" p-2 text-center rounded-xl text-white/70 bg-white/10">
+              {container4}
+            </div>
+            <div className=" p-2 text-center rounded-xl text-white/70 bg-white/10">
+              {container5}
+            </div>
+            <div className=" p-2 text-center rounded-xl text-white/70 bg-white/10">
+              {container6}
+            </div>
+          </div>
           )}
         </div>
       </div>

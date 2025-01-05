@@ -17,14 +17,26 @@ const Home = () => {
   para = {"user can Earn while interacting with tasks, Monotized Socials Media accounts, Blogs, and Other Tasks. user will be rewarded against doing tasks as Boze Coin Points."}
   img = {'/images/mobile/1.png'}
   container1 = {'Watch Youtube'}
-  container2 = {'Digit Coded Videos'}
+  container2 = {'6 Digit Coded Videos'}
   container3 = {'Follow'}
   container4 = {'Like'}
   container5 = {'Comment'}
   container6 = {'Subscribe'}
   />
   <HomeSec4/>
-  <HomeSec3 item = {true} />
+  <HomeSec3 
+  item = {true}
+  heading = {"how to earn with Boze Coin?"} 
+  para = {"user can Earn while interacting with tasks, Monotized Socials Media accounts, Blogs, and Other Tasks. user will be rewarded against doing tasks as Boze Coin Points."}
+  img = {'/images/mobile/2.png'}
+  container1 = {'Watch Youtube'}
+  container2 = {'Digit Coded Videos'}
+  container3 = {'Follow'}
+  container4 = {'Like'}
+  container5 = {'Comment'}
+  container6 = {'Subscribe'}                                                                                                                        
+  
+  />
   <HomeLabel/>
   <HomeSec5/>
   </>
