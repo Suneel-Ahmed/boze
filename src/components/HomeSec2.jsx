@@ -51,26 +51,26 @@ const HomeSec2 = () => {
 	);
 
   return (
-    <div ref={containerRef} className='w-full overflow-x-hidden relative min-h-screen py-[70px]  flex justify-center items-center' >
+    <div ref={containerRef} className='w-full overflow-x-hidden relative max-md:min-h-fit min-h-screen max-md:py-[10px] py-[70px]  flex justify-center items-center' >
         {/* on scroll slide left to right  */}
-        <div className='flex absolute top-56 gap-[100px]' >
+        <div className='flex absolute max-md:top-28 top-56 gap-[100px]' >
             {
                 bgImages && bgImages?.map((val, index) =>(
 
-                    <img ref={(el) => (rightToLeftRef.current[index] = el)} key={val?.id}  src={val?.value} className='w-[100px]' alt="logo" />
+                    <img ref={(el) => (rightToLeftRef.current[index] = el)} key={val?.id}  src={val?.value} className='w-[clamp(40px,4.3vw,100px)]' alt="logo" />
                 ))
             }
         </div>
-        <img  src="/images/mobile/mobile.png " className='w-[400px] relative z-10' alt="mobile" />
+        <img  src="/images/mobile/mobile.png " className='w-[clamp(250px,6.4vw,400px)] relative z-10' alt="mobile" />
         {/* on scroll slide right to left  */}
-        <div className='flex absolute  bottom-56 gap-[100px]' >
+        <div className='flex absolute max-md:bottom-28  bottom-56 gap-[100px]' >
         {
   bgImages && bgImages?.reverse().map((val, index) => (
     <img
       ref={(el) => (leftToRightRef.current[index] = el)}
       key={val?.id}
       src={val?.value}
-      className="w-[100px]"
+      className="w-[clamp(40px,4.3vw,100px)]"
       alt="logo"
     />
   ))
