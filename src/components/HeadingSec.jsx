@@ -32,8 +32,8 @@ const HeadingSec = () => {
 		{ scope: containerRef }
 	);
   return (
-    <div ref={containerRef} className='w-full h-fit overflow-x-hidden py-10' >
-      <h1 ref={leftToRightRef} className='text-[200px] text-nowrap text-white/30 italic quicksand font-semibold' >YOU CAN <span className='text-[#fdb71f]/60'> TRADE </span> ANY TOKEN</h1>
+    <div ref={containerRef} className='w-full min-h-fit  overflow-x-hidden py-[15vh]' >
+      <h1 ref={leftToRightRef} className='text-[clamp(60px,6.2vw,250px)] text-nowrap text-white/30 italic quicksand font-semibold' >YOU CAN <span className='text-[#fdb71f]/60'> TRADE </span> ANY TOKEN</h1>
     </div>
   )
 }
