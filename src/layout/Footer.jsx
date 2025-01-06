@@ -26,8 +26,7 @@ const Footer = () => {
                 <div className='flex items-center max-md:flex-col  max-lg:order-1 gap-3' >
                     <div className='flex gap-[20px]' >
 
-                    <h1>Job Openings</h1>
-                    <h1>Privacy Policy</h1>
+                    <h1>Collab with Us</h1>
                     </div>
                     <ul className="menu menu-horizontal quicksand  text-2xl lg:items-center text-white px-1">
           {

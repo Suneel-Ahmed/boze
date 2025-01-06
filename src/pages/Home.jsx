@@ -6,6 +6,7 @@ import HomeSec3 from '../components/HomeSec3';
 import HomeSec4 from '../components/HomeSec4';
 import HomeLabel from '../components/HomeLabel';
 import HomeSec5 from '../components/HomeSec5';
+import HomeSec6 from '../components/HomeSec6';
 const Home = () => {
   return (
   <>
@@ -37,6 +38,7 @@ const Home = () => {
   container6 = {'Subscribe'}                                                                                                                        
   
   />
+  <HomeSec6/>
   <HomeLabel/>
   <HomeSec5/>
   </>
