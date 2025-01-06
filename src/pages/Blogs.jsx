@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const Blogs = () => {
   
   const data = [
@@ -40,13 +40,13 @@ const Blogs = () => {
           {
             data && data.map((val)=>(
 
-            
+            // /blogs/:id
           <div key={val.id} className='w-[800px] flex flex-col gap-[30px] ' >
-                <div className='w-full h-[500px]  rounded-2xl overflow-hidden' >
+                <Link to={`/blogs/${val.id}`} className='w-full h-[500px]  rounded-2xl overflow-hidden' >
                 <img src={val.img} alt={val.img} className=' w-full h-full object-cover object-center' />
-                </div>
+                </Link>
                 <div className='w-full flex flex-col items-center justify-center '>
-                  <h1 className='text-white text-[50px] mb-10' >{val.heading}</h1>
+                 <Link to={`/blogs/${val.id}`} > <h1 className='text-white text-[50px] mb-10' >{val.heading}</h1></Link>
                   <div className='w-full h-1 bg-white rounded-xl mt-auto' ></div>
                 </div>
           </div>
