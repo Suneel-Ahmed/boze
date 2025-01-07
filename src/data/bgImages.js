@@ -63,6 +63,70 @@ const bgImages = [
         id : 16,
         value : '/images/bg-images/16.png',
     },
+    {
+        id : 17,
+        value : '/images/bg-images/1.png',
+    },
+    {
+        id : 18,
+        value : '/images/bg-images/2.png',
+    },
+    {
+        id : 19,
+        value : '/images/bg-images/3.png',
+    },
+    {
+        id : 20,
+        value : '/images/bg-images/4.png',
+    },
+    {
+        id : 21,
+        value : '/images/bg-images/5.png',
+    },
+    {
+        id : 22,
+        value : '/images/bg-images/6.png',
+    },
+    {
+        id : 23,
+        value : '/images/bg-images/7.png',
+    },
+    {
+        id : 24,
+        value : '/images/bg-images/8.png',
+    },
+    {
+        id : 25,
+        value : '/images/bg-images/9.png',
+    },
+    {
+        id : 26,
+        value : '/images/bg-images/10.png',
+    },
+    {
+        id : 27,
+        value : '/images/bg-images/11.png',
+    },
+    {
+        id : 28,
+        value : '/images/bg-images/12.png',
+    },
+    {
+        id : 29,
+        value : '/images/bg-images/13.png',
+    },
+    {
+        id : 30,
+        value : '/images/bg-images/14.png',
+    },
+    {
+        id : 31,
+        value : '/images/bg-images/15.png',
+    },
+    {
+        id : 32,
+        value : '/images/bg-images/16.png',
+    },
 ]
 
 

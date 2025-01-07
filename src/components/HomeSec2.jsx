@@ -11,47 +11,42 @@ const HomeSec2 = () => {
    
     useGSAP(
 		() => {
+      const containerWidth = containerRef.current.offsetWidth;
+    const tl =   gsap.timeline({
+				scrollTrigger: {
+					trigger: containerRef.current,
+					start: 'top top',
+					end: `bottom bottom`,
+					scrub: 1.5,
+				},
+			});
               // Slide Left to Right
-              gsap.fromTo(
+              tl.fromTo(
                 leftToRightRef.current,
-                { x: '-100%' },
+                { x: `-${containerWidth}px` },
                 {
-                  x: '100%',
-                  scrollTrigger: {
-                    trigger: containerRef.current,
-                    start: 'top bottom', // Start when the top of the container reaches the bottom of the viewport
-                    end: 'bottom top',   // End when the bottom of the container reaches the top of the viewport
-                    scrub: 1,            // Smoothly scrubs the animation with the scroll position
-                    markers: false,      // Set to true to visualize the scrollTrigger markers
-                  },
+                  x: `100%`,
                   duration: 5,
-                  ease: 'linear',
+                  ease: 'power1.inOut',
                 }
               );
         
               // Slide Right to Left
-              gsap.fromTo(
+              tl.fromTo(
                 rightToLeftRef.current,
                 { x: '100%' },
                 {
-                  x: '-100%',
-                  scrollTrigger: {
-                    trigger: containerRef.current,
-                    start: 'top bottom',
-                    end: 'bottom top',
-                    scrub: 1,
-                    markers: false,
-                  },
+                  x: `-${containerWidth}px`,
                   duration: 5,
                   ease: 'linear',
-                }
+                } ,"<"
               );
             },
 		{ scope: containerRef }
 	);
 
   return (
-    <div ref={containerRef} className='w-full overflow-x-hidden relative max-md:min-h-fit min-h-fit max-md:py-[10px] py-[40px]  flex justify-center items-center' >
+    <div ref={containerRef} className='w-full overflow-x-hidden relative max-md:min-h-fit min-h-screen max-md:py-[10px] py-[40px]  flex justify-center items-center' >
         {/* on scroll slide left to right  */}
         <div className='flex absolute max-md:top-28 top-48 gap-[100px]' >
             {
