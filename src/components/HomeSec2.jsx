@@ -16,8 +16,10 @@ const HomeSec2 = () => {
 				scrollTrigger: {
 					trigger: containerRef.current,
 					start: 'top top',
-					end: `bottom bottom`,
+					end: `+=${containerWidth})}`,
 					scrub: 1.5,
+          pin : true,
+          pinSpacing : true,
 				},
 			});
               // Slide Left to Right
