@@ -36,18 +36,18 @@ const Blogs = () => {
   ]
 
   return (
-    <div className='w-full min-h-screen flex flex-col  gap-[150px] pt-[100px] justify-center items-center bg-black' >
+    <div className='w-full min-h-screen flex flex-col max-lg:px-[clamp(30px,6.7vw,100px)]  gap-[clamp(30px,12.2vw,150px)] pt-[100px] justify-center items-center bg-black' >
           {
             data && data.map((val)=>(
 
             // /blogs/:id
-          <div key={val.id} className='w-[800px] flex flex-col gap-[30px] ' >
-                <Link to={`/blogs/${val.id}`} className='w-full h-[500px]  rounded-2xl overflow-hidden' >
+          <div key={val.id} className='max-w-[800px] h-auto  max-lg:w-full  flex flex-col gap-[clamp(10px,2.3vw,30px)] ' >
+                <Link to={`/blogs/${val.id}`} className='w-full max-lg:h-auto h-[500px]  rounded-2xl overflow-hidden' >
                 <img src={val.img} alt={val.img} className=' w-full h-full object-cover object-center' />
                 </Link>
                 <div className='w-full flex flex-col items-center justify-center '>
-                 <Link to={`/blogs/${val.id}`} > <h1 className='text-white text-[50px] mb-10' >{val.heading}</h1></Link>
-                  <div className='w-full h-1 bg-white rounded-xl mt-auto' ></div>
+                 <Link to={`/blogs/${val.id}`} > <h1 className='text-white text-[clamp(20px,5.2vw,50px)] mb-10' >{val.heading}</h1></Link>
+                  <div className='w-full h-1 bg-white rounded-xl max-md:mt-0 mt-auto' ></div>
                 </div>
           </div>
           ))
