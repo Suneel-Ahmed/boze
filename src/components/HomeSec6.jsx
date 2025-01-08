@@ -9,7 +9,7 @@ const HomeSec6 = () => {
         </div>
         <div className="flex gap-[80px] max-lg:mx-auto flex-col">
           <div className="flex flex-col me-auto max-lg:mx-auto max-lg:items-center max-lg:text-center items-start">
-            <img src="/images/logo/5.png" alt="Binance" className="w-[180px] " />
+            <img src="/images/logo/5.png" alt="Binance" className="w-[75px] " />
             <p className="text-[18px] w-[300px] mt-4 text-white/50 capitalize ">
             Username and Binance Identification Number are Necessary to Claim Your Reward
             </p>
