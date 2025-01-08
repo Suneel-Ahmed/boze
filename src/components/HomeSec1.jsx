@@ -25,11 +25,11 @@ const HomeSec1 = () => {
 
   return (
     <div ref={containerRef} className='w-full relative h-[90vh] flex flex-col justify-center pb-14   items-center '  >
-    <h1 className='text-[clamp(30px,6.3vw,100px)] px-[30px] lg:w-[60%]  text-center z-10  quicksand font-extrabold text-white'> Boze Con - A Revenue Sharing
+    <h1 className='text-[clamp(30px,6.3vw,100px)] px-[30px] lg:w-[60%]  text-center z-10  quicksand font-extrabold text-white'> Boze Coin <br /> A Revenue Sharing
 	Project</h1>
     <img ref={image} className='absolute  opacity-20 w-[500px] mt-[50px]' src="/images/logo.png" alt="boze" />
     
-    <Link to={'/'} className='text-center max-md:btn-md max-md:mt-[30px] z-10 btn btn-lg  text-[24px] mt-[40px]  ' >Launch Boze on Telegram</Link>
+    <Link to={'/'} className='text-center max-md:btn-md max-md:mt-[30px] z-10 btn btn-lg  text-[24px] mt-[40px]  ' >Launch Boze Coin on Telegram</Link>
 
     <div
 				

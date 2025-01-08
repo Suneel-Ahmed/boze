@@ -33,7 +33,7 @@ const HeadingSec = () => {
 	);
   return (
     <div ref={containerRef} className='w-full min-h-fit  overflow-x-hidden py-[15vh]' >
-      <h1 ref={leftToRightRef} className='text-[clamp(60px,6.2vw,250px)] text-nowrap text-white/30 italic quicksand font-semibold' >YOU CAN <span className='text-[#fdb71f]/60'> TRADE </span> ANY TOKEN</h1>
+      <h1 ref={leftToRightRef} className='text-[clamp(60px,6.2vw,250px)] text-nowrap text-white/30 italic quicksand uppercase font-semibold' >Earn while <span className='text-[#fdb71f]/60'> watching </span> and  <span className='text-[#fdb71f]/60'> learning </span> </h1>
     </div>
   )
 }

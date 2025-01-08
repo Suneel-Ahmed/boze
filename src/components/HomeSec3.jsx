@@ -37,49 +37,49 @@ const HomeSec3 = ({
             className="w-[40px] h-auto"
             alt="mobile"
           />
-          <h1 className="text-[clamp(20px,5.2vw,40px)]">{heading}</h1>
-          <p className="w-[350px] text-white/50 ">
+          <h1 className="text-[clamp(20px,5.2vw,40px)] capitalize">{heading}</h1>
+          <p className="w-[350px] capitalize text-white/50 ">
             {para}
           </p>
           {!item ? (
             <div className="grid grid-cols-3 gap-[5px]">
-              <div className="p-2 text-center rounded-xl text-white/70 bg-white/10">
+              <div className="p-2 text-center capitalize rounded-xl text-white/70 bg-white/10">
               {container1}
               </div>
-              <div className=" p-2 text-center rounded-xl text-white/70 bg-white/10">
+              <div className=" p-2 text-center capitalize rounded-xl text-white/70 bg-white/10">
                 {container2}
               </div>
-              <div className=" p-2 text-center px-5 rounded-xl text-white/70 bg-white/10">
+              <div className=" p-2 text-center capitalize px-5 rounded-xl text-white/70 bg-white/10">
                 {container3}
               </div>
-              <div className=" p-2 text-center rounded-xl text-white/70 bg-white/10">
+              <div className=" p-2 text-center capitalize rounded-xl text-white/70 bg-white/10">
                 {container4}
               </div>
-              <div className=" p-2 text-center rounded-xl text-white/70 bg-white/10">
+              <div className=" p-2 text-center capitalize rounded-xl text-white/70 bg-white/10">
                 {container5}
               </div>
-              <div className=" p-2 text-center rounded-xl text-white/70 bg-white/10">
+              <div className=" p-2 text-center capitalize rounded-xl text-white/70 bg-white/10">
                 {container6}
               </div>
             </div>
           ) : (
             <div className="grid grid-cols-3 gap-[5px]">
-            <div className="p-2 text-center rounded-xl text-white/70 bg-white/10">
+            <div className="p-2 text-center rounded-xl capitalize text-white/70 bg-white/10">
             {container1}
             </div>
-            <div className=" p-2 text-center rounded-xl text-white/70 bg-white/10">
+            <div className=" p-2 text-center capitalize rounded-xl text-white/70 bg-white/10">
               {container2}
             </div>
-            <div className=" p-2 text-center px-5 rounded-xl text-white/70 bg-white/10">
+            <div className=" p-2 text-center px-5 capitalize rounded-xl text-white/70 bg-white/10">
               {container3}
             </div>
-            <div className=" p-2 text-center rounded-xl text-white/70 bg-white/10">
+            <div className=" p-2 text-center rounded-xl capitalize text-white/70 bg-white/10">
               {container4}
             </div>
-            <div className=" p-2 text-center rounded-xl text-white/70 bg-white/10">
+            <div className=" p-2 text-center rounded-xl capitalize text-white/70 bg-white/10">
               {container5}
             </div>
-            <div className=" p-2 text-center rounded-xl text-white/70 bg-white/10">
+            <div className=" p-2 text-center rounded-xl capitalize text-white/70 bg-white/10">
               {container6}
             </div>
           </div>

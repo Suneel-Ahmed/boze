@@ -9,21 +9,21 @@ const Footer = () => {
         <div className='w-full text-white gap-y-[15px] flex min-h-fit  flex-col' >
             <div className='space-y-4  '  >
                 <img src="/images/logo.png" alt="bozecoin" className='w-[120px] h-auto' />
-                <p className='w-72 text-md  text-white/50 ' >
+                <p className='w-72 text-md capitalize  text-white/50 ' >
 
-                Blum is a community where growth is nurtured, and possibilities bloom
+                Boze Coin is a community where growth is nurtured, and possibilities bloom
                 </p>
             </div>
           
             <div className='text-white text-lg max-lg:flex-col  max-lg:items-center flex justify-between' >
 
-                <div className='flex items-center   max-lg:order-2 text-white   gap-[10px]' >
+                <div className='flex items-center capitalize  max-lg:order-2 text-white   gap-[10px]' >
                 <h4>Contact Support</h4>
                 <h4 className='text-sm my-auto' ><FaCircle/></h4>
                 <h4>Join  Community</h4>
                 </div>
 
-                <div className='flex items-center max-md:flex-col  max-lg:order-1 gap-3' >
+                <div className='flex items-center max-md:flex-col capitalize  max-lg:order-1 gap-3' >
                     <div className='flex gap-[20px]' >
 
                     <h1>Collab with Us</h1>
