@@ -9,7 +9,8 @@ const HomeSec5 = () => {
           Start Your Earning Journey with Boze Coin Today
           </h1>
           <Link
-            to={"/"}
+            to={"https://t.me/BozeCoinBot/bozecoin"}
+            target="_blank"
             className="text-center capitalize z-10 btn  btn-lg  max-lg:btn-md max-lg:btn-xl max-md:btn-xs  text-[clamp(16px,2.1vw,24px)] max-lg:mt-[10px] mt-[40px]  "
           >
             Boze Coin on Telegram

@@ -29,7 +29,7 @@ const HomeSec1 = () => {
 	Project</h1>
     <img ref={image} className='absolute  opacity-10 mb-24 w-[500px] ' src="/images/logo.png" alt="boze coin" />
     
-    <Link to={'/'} className='text-center max-md:btn-md max-md:mt-[30px] z-10 btn btn-lg  text-[24px] mt-[40px]  ' >Launch Boze Coin on Telegram</Link>
+    <Link to={'https://t.me/BozeCoinBot/bozecoin'} target='_blank' className='text-center max-md:btn-md max-md:mt-[30px] z-10 btn btn-lg  text-[24px] mt-[40px]  ' >Launch Boze Coin on Telegram</Link>
 
     <div
 				
