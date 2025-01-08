@@ -15,17 +15,15 @@ const HomeSec2 = () => {
     const tl =   gsap.timeline({
 				scrollTrigger: {
 					trigger: containerRef.current,
-					start: 'top top',
-					end: `+=${containerWidth})}`,
+					start: 'top center',
+					end: `bottom bottom`,
 					scrub: 1.5,
-          pin : true,
-          pinSpacing : true,
 				},
 			});
               // Slide Left to Right
               tl.fromTo(
                 leftToRightRef.current,
-                { x: `-${containerWidth}px` },
+                { x: `-${containerWidth - 200}px` },
                 {
                   x: `100%`,
                   duration: 5,
@@ -38,9 +36,9 @@ const HomeSec2 = () => {
                 rightToLeftRef.current,
                 { x: '100%' },
                 {
-                  x: `-${containerWidth}px`,
+                  x: `-${containerWidth - 200}px`,
                   duration: 5,
-                  ease: 'linear',
+                  ease: 'power1.inOut',
                 } ,"<"
               );
             },
