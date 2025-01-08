@@ -5,7 +5,7 @@ import Blogs from './pages/Blogs';
 import SingleBlog from './pages/SingleBlog';
 import Layout from './layout/Layout';
 import useSmoothScroll from './hook/useSmoothScroll';
-
+import Contact from './pages/Contact';
 const App = () => {
   useSmoothScroll();
   return (
@@ -16,6 +16,7 @@ const App = () => {
         
       <Route path='/blogs' element = {<Blogs/>} />
       <Route path='/blogs/:id' element = {<SingleBlog/>} />
+      <Route path='/support' element = {<Contact/>} />
     </Routes>
       </Layout>
 

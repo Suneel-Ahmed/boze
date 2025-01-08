@@ -18,15 +18,15 @@ const Footer = () => {
             <div className='text-white text-lg max-lg:flex-col  max-lg:items-center flex justify-between' >
 
                 <div className='flex items-center max-[350px]:flex-col capitalize  max-lg:order-2 text-white   gap-[10px]' >
-                <h4>Contact Support</h4>
+                <Link to = {"/support/#"}>Contact Support</Link>
                 <h4 className='text-sm my-auto' ><FaCircle/></h4>
-                <h4>Join  Community</h4>
+                <Link to={'https://t.me/bozecoincommunity'} target='_blank' >Join  Community</Link>
                 </div>
 
                 <div className='flex items-center max-md:flex-col capitalize  max-lg:order-1 gap-3' >
                     <div className='flex gap-[20px]' >
 
-                    <h1>Collab with Us</h1>
+                    <Link to = {"https://t.me/bozecoincommunity"} target='_blank' >Collab with Us</Link>
                     </div>
                     <ul className="menu menu-horizontal quicksand  text-2xl lg:items-center text-white px-1">
           {
