@@ -10,14 +10,14 @@ const SingleBlog = () => {
     },
   ];
   return (
-    <div className="w-full min-h-screen flex flex-col  gap-[150px] pt-[100px] justify-center items-center bg-black">
+    <div className="w-full min-h-screen flex flex-col  max-lg:px-[clamp(30px,6.7vw,100px)]  gap-[clamp(30px,12.2vw,150px)] pt-[100px] justify-center items-center bg-black">
       {data &&
         data.map((val) => (
           // /blogs/:id
-          <div key={val.id} className="w-[1000px] flex flex-col gap-[30px] ">
+          <div key={val.id} className="w-[70%] max-lg:w-full flex flex-col gap-[30px] ">
             <div
               
-              className="w-full h-[500px]  rounded-2xl overflow-hidden"
+              className="w-full h-[500px] max-lg:h-auto   rounded-2xl overflow-hidden"
             >
               <img
                 src={val.img}
@@ -28,9 +28,9 @@ const SingleBlog = () => {
             <div className="w-full flex flex-col items-center justify-center ">
               
                 {" "}
-                <h1 className="text-white text-[50px] mb-10">{val.heading}</h1>
+                <h1 className="text-white text-[clamp(20px,5.2vw,50px)] mb-10">{val.heading}</h1>
               
-              <div className="w-full h-1 bg-white rounded-xl mt-auto"></div>
+              <div className="w-full h-1 bg-white rounded-xl max-lg:mt-0 mt-auto"></div>
             </div>
             <div className="w-full flex flex-col gap-10 text-[16px] text-white/50" >
               <p>{val.para}</p>

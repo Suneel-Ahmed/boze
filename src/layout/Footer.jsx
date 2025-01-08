@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='w-full text-white gap-y-[15px] flex min-h-fit  flex-col' >
             <div className='space-y-4  '  >
                 <img src="/images/logo.png" alt="bozecoin" className='w-[120px] h-auto' />
-                <p className='w-72 text-md capitalize  text-white/50 ' >
+                <p className='w-72 max-sm:w-full text-md capitalize  text-white/50 ' >
 
                 Boze Coin is a community where growth is nurtured, and possibilities bloom
                 </p>
@@ -17,7 +17,7 @@ const Footer = () => {
           
             <div className='text-white text-lg max-lg:flex-col  max-lg:items-center flex justify-between' >
 
-                <div className='flex items-center capitalize  max-lg:order-2 text-white   gap-[10px]' >
+                <div className='flex items-center max-[350px]:flex-col capitalize  max-lg:order-2 text-white   gap-[10px]' >
                 <h4>Contact Support</h4>
                 <h4 className='text-sm my-auto' ><FaCircle/></h4>
                 <h4>Join  Community</h4>
