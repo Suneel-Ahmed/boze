@@ -8,16 +8,12 @@ const HomeSec4 = () => {
                     <div className='flex flex-col me-auto max-lg:mx-auto max-lg:items-center max-lg:text-center items-start' >
                             <img src="/images/logo/1.svg" alt="boze" className='w-[80px]' />
                             <h1 className='text-[30px] capitalize text-white mt-4 ' >Easy to use</h1>
-                            <p className='text-[18px] w-[300px] capitalize text-white/50' >pen Tasks
-Insert Code
-Claim Reward</p>
+                            <p className='text-[18px] w-[300px] capitalize text-white/50' >Open Tasks → Insert Code → Claim Reward</p>
                     </div>
                     <div className='flex flex-col me-auto max-lg:mx-auto max-lg:items-center max-lg:text-center items-start' >
                             <img src="/images/logo/2.svg" alt="boze" className='w-[80px]' />
                             <h1 className='text-[30px] text-white mt-4 capitalize ' >Let’s Watch and Earn</h1>
-                            <p className='text-[18px] w-[300px] text-white/50 capitalize ' >Not Like other platforms users had to
-create content to earn, It’s watch and
-Earn</p>
+                            <p className='text-[18px] w-[300px] text-white/50 capitalize ' >Unlike other platforms where users need to create content to earn, with Boze Coin, it’s all about watching and earning!</p>
                     </div>
                 </div>
                 <div  className=' flex justify-center max-md:hidden max-lg:order-1 ' >
@@ -27,8 +23,7 @@ Earn</p>
                 <div className='flex flex-col ms-auto max-lg:mx-auto max-lg:items-center max-lg:text-center items-start ' >
                             <img src="/images/logo/3.svg" alt="boze" className='w-[80px]' />
                             <h1 className='text-[30px] text-white mt-4 capitalize ' >Earn Via Telegram</h1>
-                            <p className='text-[18px] w-[300px] text-white/50 capitalize' >Open Telegram , Interact with Boze Coin
-                            Complete Tasks and Earn points</p>
+                            <p className='text-[18px] w-[300px] text-white/50 capitalize' >Open Telegram, interact with Boze Coin, complete tasks, and earn points.</p>
                     </div>
                     <div className='flex flex-col ms-auto max-lg:mx-auto max-lg:items-center max-lg:text-center items-start' >
                             <img src="/images/logo/4.svg" alt="boze" className='w-[80px]' />

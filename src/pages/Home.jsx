@@ -14,8 +14,8 @@ const Home = () => {
   <HomeSec2/>
   <HeadingSec/>
   <HomeSec3 
-  heading = {"how to earn with Boze Coin?"} 
-  para = {"user can Earn while interacting with tasks, Monotized Socials Media accounts, Blogs, and Other Tasks. user will be rewarded against doing tasks as Boze Coin Points."}
+  heading = {"What is Boze Coin?"} 
+  para = {"Boze Coin is a revenue-sharing project powered by a Telegram-based bot. It’s like Aladdin and the wonderful lamp of Telegram—Boze and its incredible community!"}
   img = {'/images/mobile/1.png'}
   container1 = {'Watch Youtube'}
   container2 = {'6 Digit Coded Videos'}
@@ -27,8 +27,8 @@ const Home = () => {
   <HomeSec4/>
   <HomeSec3 
   item = {true}
-  heading = {"how to earn with Boze Coin?"} 
-  para = {"user can Earn while interacting with tasks, Monotized Socials Media accounts, Blogs, and Other Tasks. user will be rewarded against doing tasks as Boze Coin Points."}
+  heading = {"How to Earn with Boze Coin?"} 
+  para = {"Users can earn by interacting with tasks, monetized social media accounts, blogs, and other activities. Users will be rewarded for completing tasks with Boze Coin Points."}
   img = {'/images/mobile/2.png'}
   container1 = {'Watch Youtube'}
   container2 = {'Digit Coded Videos'}

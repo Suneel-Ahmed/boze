@@ -1,11 +1,22 @@
-import React from 'react'
+import React from "react";
 
 const HomeLabel = () => {
   return (
-    <div className='rotate-3 w-full max-lg:mt-[120px] overflow-hidden min-h-fit py-10' >
-    <h1 className='text-white text-[20px] font-normal p-2 text-nowrap capitalize bg-[#fdb71f]'> dicta error. Veritatis vel non laudantium dolorum impedit at explicabo, ipsam porro cum sunt tempora similique velit harum perspiciatis id eaque ipsa officiis, eius nesciunt vero necessitatibus quam fugit nostrum? Tempore adipisci tenetur, placeat magnam odio odit corrupti amet a eligendi rem ea quisquam ad culpa aspernatur! Atque et harum in officiis necessitatibus eius consequatur quasi nam cupiditate similique quis aperiam laboriosam dolore saepe, earum sapiente amet nihil excepturi molestias ipsam consequuntur! Ex illo provident possimus tenetur, totam tempore adipisci modi esse enim sed. Illum ea accusamus alias a ducimus reiciendis cupiditate quo adipisci vel fugiat qui, expedita sequi.</h1>
-  </div>
-  )
-}
+    <div className="rotate-3 w-full max-lg:mt-[120px] overflow-hidden min-h-fit py-10">
+      <h1 className="text-white text-[20px] font-normal p-2 text-nowrap capitalize bg-[#fdb71f]">
+        Boze Coin: Empowering the Digital Economy! Transforming engagement into
+        rewards, we create a sustainable and inclusive ecosystem where users
+        thrive. With simplicity at its core, Boze Coin offers opportunities to
+        earn through tasks, social media, blogs, and Telegram interactions—no
+        content creation needed. Join a community that values fairness,
+        innovation, and growth. Claim your rewards effortlessly and become part
+        of a platform that shares revenue directly with you. Together, we
+        redefine the way you interact with the digital world. Boze Coin is your
+        gateway to a brighter, more rewarding online future. Engage, earn, and
+        evolve with Boze Coin today!
+      </h1>
+    </div>
+  );
+};
 
-export default HomeLabel
+export default HomeLabel;
