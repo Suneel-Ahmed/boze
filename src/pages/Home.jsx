@@ -17,12 +17,7 @@ const Home = () => {
   heading = {"What is Boze Coin?"} 
   para = {"Boze Coin is a revenue-sharing project powered by a Telegram-based bot. It’s like Aladdin and the wonderful lamp of Telegram—Boze and its incredible community!"}
   img = {'/images/mobile/1.png'}
-  container1 = {'Watch Youtube'}
-  container2 = {'6 Digit Coded Videos'}
-  container3 = {'Follow'}
-  container4 = {'Like'}
-  container5 = {'Comment'}
-  container6 = {'Subscribe'}
+
   />
   <HomeSec4/>
   <HomeSec3 
@@ -31,7 +26,7 @@ const Home = () => {
   para = {"Users can earn by interacting with tasks, monetized social media accounts, blogs, and other activities. Users will be rewarded for completing tasks with Boze Coin Points."}
   img = {'/images/mobile/2.png'}
   container1 = {'Watch Youtube'}
-  container2 = {'Digit Coded Videos'}
+  container2 = {'6 Digit Coded Videos'}
   container3 = {'Follow'}
   container4 = {'Like'}
   container5 = {'Comment'}

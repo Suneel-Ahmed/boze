@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IoSend } from "react-icons/io5";
 
-const Contact = () => {
+const Collab = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,7 +14,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailtoLink = `mailto:info@bozecoin.com?subject=Collaboration Request from ${encodeURIComponent(
+    const mailtoLink = `mailto:collaborate@bozecoin.com?subject=Collaboration Request from ${encodeURIComponent(
       formData.name
     )}&body=Hello,%0D%0A%0D%0AName: ${encodeURIComponent(
       formData.name
@@ -26,7 +26,7 @@ const Contact = () => {
 
   return (
     <div className='w-full h-[80vh] flex-col gap-[30px] flex justify-center items-center'>
-      <h1 className='text-white text-[clamp(16px,2.6vw,50px)] uppercase quicksand'>Contact Us</h1>
+      <h1 className='text-white text-[clamp(16px,2.6vw,50px)] uppercase quicksand'>Collab With Us</h1>
       <div className='w-[70%] min-h-fit py-[50px] px-[clamp(20px,5.3vw,100px)] bg-white/10 rounded-3xl glass'>
         <form onSubmit={handleSubmit}>
           <div className='flex flex-col gap-4'>
@@ -76,4 +76,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Collab;

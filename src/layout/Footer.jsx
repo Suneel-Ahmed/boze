@@ -26,7 +26,7 @@ const Footer = () => {
                 <div className='flex items-center max-md:flex-col capitalize  max-lg:order-1 gap-3' >
                     <div className='flex gap-[20px]' >
 
-                    <Link to = {"https://t.me/bozecoincommunity"} target='_blank' >Collab with Us</Link>
+                    <Link to = {"/collab"}  >Collab with Us</Link>
                     </div>
                     <ul className="menu menu-horizontal quicksand  text-2xl lg:items-center text-white px-1">
           {
