@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IoSend } from "react-icons/io5";
-
+import { Helmet } from 'react-helmet';
 const Collab = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -25,6 +25,12 @@ const Collab = () => {
   };
 
   return (
+    <>
+      <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Boze Coin | Collab Us</title>
+                    <link rel="canonical" href="http://bozecoin.com/collab" />
+                </Helmet>
     <div className='w-full h-[80vh] flex-col gap-[30px] flex justify-center items-center'>
       <h1 className='text-white text-[clamp(16px,2.6vw,50px)] uppercase quicksand'>Collab With Us</h1>
       <div className='w-[70%] min-h-fit py-[50px] px-[clamp(20px,5.3vw,100px)] bg-white/10 rounded-3xl glass'>
@@ -73,6 +79,7 @@ const Collab = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 

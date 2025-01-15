@@ -1,4 +1,5 @@
 import React from 'react'
+import {Helmet} from "react-helmet";
 import HomeSec1 from '../components/HomeSec1';
 import HomeSec2 from '../components/HomeSec2';
 import HeadingSec from '../components/HeadingSec';
@@ -10,6 +11,11 @@ import HomeSec6 from '../components/HomeSec6';
 const Home = () => {
   return (
   <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Boze Coin | HOME</title>
+                <link rel="canonical" href="http://bozecoin.com/" />
+            </Helmet>
   <HomeSec1/>
   <HomeSec2/>
   <HeadingSec/>
