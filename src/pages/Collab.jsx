@@ -6,6 +6,7 @@ const Collab = () => {
     name: '',
     email: '',
     message: '',
+    whatsapp : ''
   });
 
   const handleChange = (e) => {
@@ -14,13 +15,16 @@ const Collab = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailtoLink = `mailto:collaborate@bozecoin.com?subject=Collaboration Request from ${encodeURIComponent(
+    const mailtoLink = `mailto:tajordermenow@gmail.com?subject=Collaboration Request from ${encodeURIComponent(
       formData.name
     )}&body=Hello,%0D%0A%0D%0AName: ${encodeURIComponent(
       formData.name
     )}%0D%0AEmail: ${encodeURIComponent(
       formData.email
-    )}%0D%0AMessage: ${encodeURIComponent(formData.message)}`;
+    )}%0D%0Awhatsapp: ${encodeURIComponent(
+      formData.whatsapp
+    )}
+    %0D%0AMessage: ${encodeURIComponent(formData.message)}`;
     window.location.href = mailtoLink;
   };
 
@@ -29,7 +33,7 @@ const Collab = () => {
       <Helmet>
                     <meta charSet="utf-8" />
                     <title>Boze Coin | Collab Us</title>
-                    <link rel="canonical" href="http://bozecoin.com/collab" />
+                    <link rel="canonical" href="https://bozecoin.com/collab" />
                 </Helmet>
     <div className='w-full h-[80vh] flex-col gap-[30px] flex justify-center items-center'>
       <h1 className='text-white text-[clamp(16px,2.6vw,50px)] uppercase quicksand'>Collab With Us</h1>
@@ -56,6 +60,18 @@ const Collab = () => {
               onChange={handleChange}
               className='px-[10px] text-white py-3 rounded-xl border bg-transparent'
               placeholder='Enter Your Email'
+              required
+            />
+          </div>
+          <div className='flex mt-3 flex-col gap-4'>
+            <label className='text-white text-[20px]'>Whats App</label>
+            <input
+              type="number"
+              name="whatsapp"
+              value={formData.whatsapp}
+              onChange={handleChange}
+              className='px-[10px] text-white py-3 rounded-xl border bg-transparent'
+              placeholder='Enter Your WhatsApp Number'
               required
             />
           </div>

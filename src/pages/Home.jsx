@@ -14,7 +14,7 @@ const Home = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Boze Coin | HOME</title>
-                <link rel="canonical" href="http://bozecoin.com/" />
+                <link rel="canonical" href="https://bozecoin.com/" />
             </Helmet>
   <HomeSec1/>
   <HomeSec2/>

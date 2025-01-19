@@ -4,6 +4,10 @@ import { FaTelegram , FaYoutube , FaInstagram , FaCircle } from "react-icons/fa"
 import { FaSquareThreads } from "react-icons/fa6";
 import Nav from '../data/navData';
 const Footer = () => {
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
   return (
     <div className='mt-auto px-[clamp(20px,4.3vw,150px)] w-full  py-10 ' >
         <div className='w-full text-white gap-y-[15px] flex min-h-fit  flex-col' >
@@ -18,7 +22,7 @@ const Footer = () => {
             <div className='text-white text-lg max-lg:flex-col  max-lg:items-center flex justify-between' >
 
                 <div className='flex items-center max-[350px]:flex-col capitalize  max-lg:order-2 text-white   gap-[10px]' >
-                <Link to = {"/support/#"}>Contact Support</Link>
+                <Link onClick={handleClick} to = {"/support/#"}>Contact Support</Link>
                 <h4 className='text-sm my-auto' ><FaCircle/></h4>
                 <Link to={'https://t.me/bozecoincommunity'} target='_blank' >Join  Community</Link>
                 </div>
@@ -26,7 +30,7 @@ const Footer = () => {
                 <div className='flex items-center max-md:flex-col capitalize  max-lg:order-1 gap-3' >
                     <div className='flex gap-[20px]' >
 
-                    <Link to = {"/collab"}  >Collab with Us</Link>
+                    <Link onClick={handleClick} to = {"/collab"}  >Collab with Us</Link>
                     </div>
                     <ul className="menu menu-horizontal quicksand  text-2xl lg:items-center text-white px-1">
           {

@@ -6,6 +6,7 @@ const Contact = () => {
     name: '',
     email: '',
     message: '',
+    whatsapp : ''
   });
 
   const handleChange = (e) => {
@@ -20,6 +21,8 @@ const Contact = () => {
       formData.name
     )}%0D%0AEmail: ${encodeURIComponent(
       formData.email
+    )}%0D%0Awhatsapp: ${encodeURIComponent(
+      formData.whatsapp
     )}%0D%0AMessage: ${encodeURIComponent(formData.message)}`;
     window.location.href = mailtoLink;
   };
@@ -29,7 +32,7 @@ const Contact = () => {
               <Helmet>
                     <meta charSet="utf-8" />
                     <title>Boze Coin | Contact Us</title>
-                    <link rel="canonical" href="http://bozecoin.com/support" />
+                    <link rel="canonical" href="https://bozecoin.com/support" />
                 </Helmet>
     <div className='w-full h-[80vh] flex-col gap-[30px] flex justify-center items-center'>
       <h1 className='text-white text-[clamp(16px,2.6vw,50px)] uppercase quicksand'>Contact Us</h1>
@@ -56,6 +59,18 @@ const Contact = () => {
               onChange={handleChange}
               className='px-[10px] text-white py-3 rounded-xl border bg-transparent'
               placeholder='Enter Your Email'
+              required
+            />
+          </div>
+          <div className='flex mt-3 flex-col gap-4'>
+            <label className='text-white text-[20px]'>Whats App</label>
+            <input
+              type="number"
+              name="whatsapp"
+              value={formData.whatsapp}
+              onChange={handleChange}
+              className='px-[10px] text-white py-3 rounded-xl border bg-transparent'
+              placeholder='Enter Your WhatsApp Number'
               required
             />
           </div>

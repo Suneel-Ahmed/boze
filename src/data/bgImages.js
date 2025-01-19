@@ -33,7 +33,7 @@ const bgImages = [
     },
     {
         id : 9,
-        value : '/images/bg-images/9.png',
+        value : '/images/bg-images/3.png',
     },
     {
         id : 10,
@@ -78,7 +78,7 @@ const bgImages = [
     },
     {
         id : 20,
-        value : '/images/bg-images/1.png',
+        value : '/images/bg-images/5.png',
     }
    
 ]

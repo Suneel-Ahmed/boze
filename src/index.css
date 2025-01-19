@@ -27,3 +27,61 @@ body{
   background: rgb(255,197,70);
 background: linear-gradient(25deg, rgba(255,197,70,1) 35%, rgba(228,161,16,1) 100%);
 }
+
+
+.content h1{
+  font-size: clamp(1.5rem,2.3vw,2.5rem);
+}
+.content h2{
+  font-size: clamp(1.3rem,2.3vw,2.4rem); 
+}
+.content h3{
+  font-size: clamp(1.2rem,2.3vw,2.3rem);
+}
+.content h4{
+  font-size: clamp(1.1rem,2.3vw,2rem);
+}
+.content h5{
+  font-size: clamp(1.1rem,2.3vw,1.9rem);
+}
+.content h6{
+  font-size: clamp(1.1rem,2.3vw,1.7rem);
+}
+.content p{
+  font-size: clamp(1.1rem,2.3vw,1.5rem);
+}
+.content ul li{
+  font-size: clamp(1.1rem,2.3vw,1.5rem);
+}
+
+@media (max-height : 630px) {
+  
+  .single_blog_heading{
+    font-size: 2em;
+  }
+  .content h1{
+    font-size: clamp(1.5rem,2.3vw,2.5rem);
+  }
+  .content h2{
+    font-size: clamp(1.3rem,2.3vw,2.4rem); 
+  }
+  .content h3{
+    font-size: clamp(1.2rem,2.3vw,2.3rem);
+  }
+  .content h4{
+    font-size: clamp(1.1rem,2.3vw,2rem);
+  }
+  .content h5{
+    font-size: clamp(1.1rem,2.3vw,1.9rem);
+  }
+  .content h6{
+    font-size: clamp(1.1rem,2.3vw,1.7rem);
+  }
+  .content p{
+    font-size: clamp(1.1rem,2.3vw,1.5rem);
+  }
+  .content ul li{
+    font-size: clamp(1.1rem,2.3vw,1.5rem);
+  }
+
+}

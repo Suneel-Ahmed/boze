@@ -11,11 +11,15 @@ const Navbar = () => {
     setIsDropdownOpen((prev) => !prev);
   };
 
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
   return (
     <div className="navbar px-[clamp(20px,4.3vw,150px)] z-[9999] h-24">
      
       <div className="navbar-start  w-full lg:items-center lg:justify-between hidden lg:flex">
-      <Link to={'/'} className='text-white text-2xl font-bold quicksand '  > 
+      <Link onClick={handleClick} to={'/'} className='text-white text-2xl font-bold quicksand '  > 
       <img src="/images/logo.png" alt="boze" className='w-[75px] h-auto' />
       </Link>
      
@@ -28,7 +32,7 @@ const Navbar = () => {
                     val.title === 'youtube' ? <Link to={val?.link} target='_blank' className='text-white' ><FaYoutube/> </Link> :
                     val.title === 'instagram' ? <Link to={val?.link} target='_blank' className='text-white' ><FaInstagram/></Link> :
                     val.title === 'threads' ? <Link to={val?.link} target='_blank' className='text-white' ><FaSquareThreads/> </Link> :
-          <Link to={val?.link} className='text-white' > {val?.title}</Link>
+          <Link to={val?.link} onClick={handleClick} className='text-white' > {val?.title}</Link>
                 }
           </li>
             ))
@@ -37,7 +41,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-start relative lg:hidden   w-full flex justify-between items-center">
-      <Link to={'/'} className='text-white text-2xl font-bold quicksand '  > 
+      <Link to={'/'} onClick={handleClick} className='text-white text-2xl font-bold quicksand '  > 
       <img src="/images/logo.png" alt="boze" className='w-[50px] h-auto' />
       </Link>
         <div className="dropdown   ">
@@ -56,7 +60,7 @@ const Navbar = () => {
             >
 
           <li  >
-          <Link to={'/'} className='text-white' > Blogs</Link>
+          <Link to={'/'} onClick={handleClick} className='text-white' > Blogs</Link>
           </li>
           <li >
           <div className='flex gap-3 justify-center'>
@@ -68,7 +72,7 @@ const Navbar = () => {
                     val.title === 'youtube' ? <Link to={val?.link} target='_blank' className='max-md:text-[20px] text-white' ><FaYoutube/> </Link> :
                     val.title === 'instagram' ? <Link to={val?.link} target='_blank' className=' max-md:text-[20px] text-white' ><FaInstagram/></Link> :
                     val.title === 'threads' ? <Link to={val?.link} target='_blank' className='max-md:text-[20px] text-white' ><FaSquareThreads/> </Link> :
-          <Link to={val?.link} className='text-white' > {val?.title}</Link>
+          <Link to={val?.link} onClick={handleClick} className='text-white' > {val?.title}</Link>
                 }
           </div>
             ))
