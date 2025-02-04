@@ -24,7 +24,7 @@ const HomeSec1 = () => {
 
 
   return (
-    <div ref={containerRef} className='w-full relative h-[90vh] flex flex-col justify-center pb-14   items-center '  >
+    <div  ref={containerRef} id='ads_video' className='ads_video w-full relative h-[90vh] flex flex-col justify-center pb-14   items-center '  >
     <h1 className='text-[clamp(30px,6.3vw,100px)] px-[30px] leading-[140%]  lg:w-[60%]  text-center z-10  quicksand font-extrabold text-white'> Boze Coin <br /> A Revenue Sharing
 	Project</h1>
     <img ref={image} className='absolute  opacity-10 mb-24 w-[500px] ' src="/images/logo.png" alt="boze coin" />
