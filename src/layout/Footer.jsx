@@ -12,7 +12,7 @@ const Footer = () => {
     <div className='mt-auto px-[clamp(20px,4.3vw,150px)] w-full  py-10 ' >
         <div className='w-full text-white gap-y-[15px] flex min-h-fit  flex-col' >
             <div className='space-y-4  '  >
-                <img src="/images/logo.png" alt="bozecoin" className='w-[120px] h-auto' />
+                <img src="/images/logo.png" loading="lazy" width="500" height="300" alt="bozecoin" className='w-[120px] h-auto' />
                 <p className='w-72 max-sm:w-full text-md capitalize  text-white/50 ' >
 
                 Boze Coin is a community where growth is nurtured, and possibilities bloom

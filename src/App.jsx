@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Blogs from './pages/Blogs';
 import SingleBlog from './pages/SingleBlog';
+import { HelmetProvider } from 'react-helmet-async';
 import Layout from './layout/Layout';
 import useSmoothScroll from './hook/useSmoothScroll';
 import Contact from './pages/Contact';
@@ -12,7 +13,7 @@ import Loading from './components/Loading';
 
 const App = () => {
   useSmoothScroll();
-  const { areImagesLoaded, loadingError } = useAssetsLoader(
+  const { areImagesLoaded } = useAssetsLoader(
     [
       '/images/logo.png',
       '/images/bg-images/1.png',
@@ -38,24 +39,11 @@ const App = () => {
       '/images/logo/5.png',
       '/images/logo/6.png',
       '/images/mobile/1.png',
-      '/images/mobile/2.png',
       '/images/mobile/3.png',
       '/images/mobile/4.png',
       '/images/mobile/6.png',
-      '/images/mobile/he.jpg',
-      '/images/mobile/mobile.png',
-      '/images/mobile/mobile2.png',
-      '/images/mobile/she.png',
     ]
   );
-
-  if (loadingError) {
-    return (
-      <div className="w-full flex justify-center min-h-screen items-center bg-black">
-        <p>Error loading assets. Please try again later.</p>
-      </div>
-    );
-  }
 
   if (!areImagesLoaded) {
     return (
@@ -66,6 +54,9 @@ const App = () => {
   }
 
   return (
+    <HelmetProvider>
+
+    
     <Router>
       <Layout>
         <Routes>
@@ -77,6 +68,7 @@ const App = () => {
         </Routes>
       </Layout>
     </Router>
+    </HelmetProvider>
   );
 };
 

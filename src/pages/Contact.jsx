@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IoSend } from "react-icons/io5";
-import {Helmet} from "react-helmet";
+import {Helmet} from "react-helmet-async";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -15,17 +15,27 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+  
+    // Ensure formData exists and contains necessary fields
+    if (!formData?.name || !formData?.email || !formData?.whatsapp || !formData?.message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+  
     const mailtoLink = `mailto:info@bozecoin.com?subject=Collaboration Request from ${encodeURIComponent(
       formData.name
     )}&body=Hello,%0D%0A%0D%0AName: ${encodeURIComponent(
       formData.name
     )}%0D%0AEmail: ${encodeURIComponent(
       formData.email
-    )}%0D%0Awhatsapp: ${encodeURIComponent(
+    )}%0D%0AWhatsApp: ${encodeURIComponent(
       formData.whatsapp
     )}%0D%0AMessage: ${encodeURIComponent(formData.message)}`;
+  
+    // Open email client
     window.location.href = mailtoLink;
   };
+  
 
   return (
     <>

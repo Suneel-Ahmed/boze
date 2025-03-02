@@ -22,6 +22,7 @@ const HomeSec3 = ({
         >
           <img
             src={img}
+            loading="lazy" width="500" height="300"
             className="w-[clamp(200px,18.3vw,550px)]"
             alt="mobile"
           />
@@ -33,6 +34,7 @@ const HomeSec3 = ({
           } items-start my-auto flex-col   gap-[10px]`}
         >
           <img
+          loading="lazy" width="500" height="300"
             src="/images/btn/btn.svg"
             className="w-[40px] h-auto"
             alt="mobile"

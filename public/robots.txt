@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /blogs
+Allow: /support
+Allow: /collab

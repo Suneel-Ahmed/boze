@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useMemo } from 'react';
 import Nav from '../data/navData';
 import { Link } from 'react-router-dom';
 import { FaTelegram , FaYoutube , FaInstagram  } from "react-icons/fa";
@@ -20,7 +20,8 @@ const Navbar = () => {
      
       <div className="navbar-start  w-full lg:items-center lg:justify-between hidden lg:flex">
       <Link onClick={handleClick} to={'/'} className='text-white text-2xl font-bold quicksand '  > 
-      <img src="/images/logo.png" alt="boze" className='w-[75px] h-auto' />
+      <img src="/images/logo.png" loading="lazy" 
+  width="500" height="500"  alt="boze" className='w-[75px] h-auto' />
       </Link>
      
         <ul className="menu menu-horizontal quicksand  text-2xl lg:items-center text-white px-1">
@@ -59,11 +60,12 @@ const Navbar = () => {
               className="menu  absolute top-[50px] menu-vertical space-y-2  dropdown-content text-white  rounded-box z-[1] bg-black   mt-3 w-full min-w-max p-2 shadow"
             >
 
-          <li  >
-          <Link to={'/'} onClick={handleClick} className='text-white' > Blogs</Link>
-          </li>
-          <li >
-          <div className='flex gap-3 justify-center'>
+          <li>
+
+<div className='w-full flex mx-auto justify-between items-center' >
+
+          <Link to={'/blogs'} onClick={handleClick} className='text-white' > Blogs</Link>
+          <div className='flex gap-[30px] justify-start'>
           {
             Nav && Nav?.filter(val => val.title !== 'Blog')?.map((val, key)=>(
             <div key={key}  >
@@ -79,7 +81,9 @@ const Navbar = () => {
           }
 
           </div>
+          </div>
           </li>
+        
               
             </ul>
           )}

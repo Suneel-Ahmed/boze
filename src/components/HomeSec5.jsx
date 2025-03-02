@@ -20,7 +20,8 @@ const HomeSec5 = () => {
           <img
             src="/images/mobile/1.png"
             alt="mobile"
-            className="w-[clamp(100px,80%,300px)]"
+            loading="lazy" width="500" height="500"
+            className="w-[clamp(100px,80%,300px)] "
           />
         </div>
       </div>

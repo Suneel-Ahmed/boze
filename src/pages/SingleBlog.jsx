@@ -2,35 +2,52 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import axios from "axios";
+import { useCopyToClipboard } from "@uidotdev/usehooks";
 import Loading from "../components/Loading";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+import { FaRegCopy } from "react-icons/fa6";
+import toast, { Toaster } from 'react-hot-toast';
+
 const SingleBlog = () => {
   const { slug } = useParams();
   const [btn1, setBtn1] = useState(false);
   const [timmer1, setTimmer1] = useState(false);
-  const [timmer2, setTimmer2] = useState(false);
-  const [code1, setCode1] = useState();
+  // const [timmer2, setTimmer2] = useState(false);
+  // const [code1, setCode1] = useState();
   const [code2, setCode2] = useState();
   const [blog, setBlog] = useState(null);
 
-  const handleBtn1 = () => {
-    setTimmer2(true);
-    window.open(blog[0]?.button1, "_blank");
-    setTimeout(() => {
-      setCode1(blog[0]?.action1);
-      setTimmer2(false);
-    }, blog[0]?.sec);
-  };
 
-  const handleBtn2 = () => {
+  
+const [, copy] = useCopyToClipboard();
+ 
+const openInNewTab = url => {
+  window.open(url, '_blank', 'noopener,noreferrer');
+};
+
+
+
+const handleBtn2 = () => {
     setTimmer1(true);
-    window.open(blog[0]?.button2, "_blank");
+ 
+    const url = blog[0]?.button2 
+   
+
+    // window.open(url, '_blank');
+    //Like this??          
+    openInNewTab(url);   // x is first link
+    
+    
+    
     setTimeout(() => {
       setBtn1(true);
+      
       setCode2(blog[0]?.action2);
       setTimmer1(false);
     }, blog[0]?.sec);
   };
+
+  
 
   const getData = async () => {
     try {
@@ -50,6 +67,8 @@ const SingleBlog = () => {
     getData();
   }, []);
 
+ 
+
   if (!blog) {
     return (
       <div className="w-full flex justify-center min-h-screen items-center bg-black">
@@ -60,6 +79,7 @@ const SingleBlog = () => {
 
   return (
     <>
+    <Toaster/>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Boze Coin | {slug} </title>
@@ -69,6 +89,7 @@ const SingleBlog = () => {
         />
       </Helmet>
       <div className="w-full min-h-screen flex flex-col  max-lg:px-[clamp(30px,6.7vw,100px)]  gap-[clamp(30px,12.2vw,150px)]  justify-center items-center bg-black">
+   
         {/* {blog && blog[0] && <Link to={blog[0]?.button1} className = "btn btn-neutral" >{blog[0]?.action1}</Link>} */}
         {blog &&
           blog?.map((val) => (
@@ -84,38 +105,13 @@ const SingleBlog = () => {
                 <img
                   src={`${import.meta.env.VITE_API_URL}/${val?.cover_img}`}
                   alt={val?.cover_img}
+                  loading="lazy" width="500" height="300"
                   className="  max-h-[630px] w-full h-full object-cover object-bottom  "
                 />
               </div>
+            
               <div className="w-full flex flex-col items-center justify-center ">
-                {" "}
-                {btn1 && blog && blog[0] && (
-                  <button
-                    onClick={handleBtn1}
-                    className={`btn  ${!timmer2 && "btn-neutral"} h-fit p-2  ${
-                      timmer2 && "bg-transparent rounded-full text-[#feb51f] "
-                    }  my-3`}
-                  >
-                    {timmer2 ? (
-                      <CountdownCircleTimer
-                        isPlaying
-                        strokeWidth={3}
-                        size={100}
-                        duration={blog[0]?.sec / 1000}
-                        colors={["#feb51f"]}
-                      >
-                        {({ remainingTime }) => remainingTime}
-                      </CountdownCircleTimer>
-                    ) : (
-                      "Generate Code"
-                    )}
-                  </button>
-                )}
-                {code1 && (
-                  <span className="text-xl text-[#feb51f] text-center">
-                    {code1}
-                  </span>
-                )}
+               
                 <div className="w-full h-1 bg-white/30 rounded-3xl max-lg:mt-0 mt-auto"></div>
               </div>
               <div className="w-full flex flex-col gap-5 text-[16px] text-white/50">
@@ -138,6 +134,7 @@ const SingleBlog = () => {
                       {timmer1 ? (
                         <CountdownCircleTimer
                           isPlaying
+                          onComplete={()=>window.open(blog[0]?.button2 , "_blank")}
                           strokeWidth={3}
                           size={100}
                           duration={blog[0]?.sec / 1000}
@@ -151,14 +148,19 @@ const SingleBlog = () => {
                     </button>
                   )}
                   {code2 && (
-                    <span className="text-xl text-[#feb51f] text-center">
-                      {code2}
+                    <span className="text-xl text-[#feb51f] mt-3 flex  gap-[10px] text-center">
+                      {code2} <span><FaRegCopy className="text-xl cursor-pointer"  onClick={()=>{ 
+                  copy(code2)
+                  toast.success("Copied Code");
+                }} /> </span>
                     </span>
                   )}
                 </div>
+          
               </div>
             </div>
           ))}
+       
       </div>
     </>
   );

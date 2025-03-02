@@ -46,16 +46,17 @@ const HomeSec2 = () => {
             {
                 bgImages && bgImages?.map((val, index) =>(
 
-                    <img ref={(el) => (rightToLeftRef.current[index] = el)} key={val?.id}  src={val?.value} className='w-[clamp(40px,4.3vw,100px)]' alt="logo" />
+                    <img loading="lazy" width="500" height="300" ref={(el) => (rightToLeftRef.current[index] = el)} key={val?.id}  src={val?.value} className='w-[clamp(40px,4.3vw,100px)]' alt="logo" />
                 ))
             }
         </div>
-        <img  src="/images/mobile/6.png " className='w-[clamp(250px,50.4vw,750px)] relative z-10' alt="mobile" />
+        <img  loading="lazy" width="500" height="300" src="/images/mobile/6.png " className='w-[clamp(250px,50.4vw,750px)] relative z-10' alt="mobile" />
         {/* on scroll slide right to left  */}
         <div className='flex absolute max-md:bottom-28 max-sm:bottom-10   bottom-56 gap-[100px]' >
         {
   bgImages && bgImages?.reverse().map((val, index) => (
     <img
+    loading="lazy" width="500" height="300"
       ref={(el) => (leftToRightRef.current[index] = el)}
       key={val?.id}
       src={val?.value}
