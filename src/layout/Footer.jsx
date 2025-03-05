@@ -30,6 +30,8 @@ const Footer = () => {
                 <div className='flex items-center max-md:flex-col capitalize  max-lg:order-1 gap-3' >
                     <div className='flex gap-[20px]' >
 
+                    <Link onClick={handleClick} to = {"/publicPolicy"}  >Public Policy</Link>
+                    <Link onClick={handleClick} to = {"/whitePaper"}  >White Paper</Link>
                     <Link onClick={handleClick} to = {"/collab"}  >Collab with Us</Link>
                     </div>
                     <ul className="menu menu-horizontal quicksand  text-2xl lg:items-center text-white px-1">

@@ -22,7 +22,7 @@ const Contact = () => {
       return;
     }
   
-    const mailtoLink = `mailto:info@bozecoin.com?subject=Collaboration Request from ${encodeURIComponent(
+    const mailtoLink = `mailto:tajordermenow@gmail.com?subject=Collaboration Request from ${encodeURIComponent(
       formData.name
     )}&body=Hello,%0D%0A%0D%0AName: ${encodeURIComponent(
       formData.name

@@ -10,6 +10,10 @@ import Contact from './pages/Contact';
 import Collab from './pages/Collab';
 import useAssetsLoader from './hook/useAssetsLoader';
 import Loading from './components/Loading';
+import PublicPolicy from './pages/PublicPolicy';
+import WhitePaper from './pages/WhitePaper';
+
+
 
 const App = () => {
   useSmoothScroll();
@@ -62,6 +66,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/publicPolicy" element={<PublicPolicy />} />
+          <Route path="/whitePaper" element={<WhitePaper />} />
           <Route path="/blogs/:slug" element={<SingleBlog />} />
           <Route path="/support" element={<Contact />} />
           <Route path="/collab" element={<Collab />} />
