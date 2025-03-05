@@ -1,4 +1,4 @@
-import React  from 'react'
+import React , {useState , useEffect}  from 'react'
 import {Helmet} from "react-helmet-async";
 import HomeSec1 from '../components/HomeSec1';
 import HomeSec2 from '../components/HomeSec2';
@@ -8,7 +8,23 @@ import HomeSec4 from '../components/HomeSec4';
 import HomeLabel from '../components/HomeLabel';
 import HomeSec5 from '../components/HomeSec5';
 import HomeSec6 from '../components/HomeSec6';
+
+
 const Home = () => {
+  const [cookies , setCookies]  = useState(true)
+  
+  
+  const handleCookie = (cookie) => {
+    localStorage.setItem("cookie", JSON.stringify(cookie));
+    setCookies(true);
+  };
+
+  useEffect(() => {
+    const storedCookie = localStorage.getItem("cookie");
+    setCookies(storedCookie ? true : false);
+  }, []);
+
+
   return (
   <>
             <Helmet>
@@ -30,6 +46,19 @@ const Home = () => {
                 <meta name="twitter:image" content="https://www.bozecoin.com/images/bozecoin-banner.jpg"/>
 
             </Helmet>
+
+            {
+        !cookies  && (
+        <div className="w-full bg-slate-950/30 backdrop-blur-md max-lg:flex-col max-lg:gap-[20px] max-lg:py-[20px] text-white gap-[100px] text-center min-h-[130px] flex justify-center items-center text-xl fixed z-[99999999] bottom-0">
+        <h1 className="text-[clamp(14px,2.3vw,20px)] px-[30px]" >We use cookies to personalize your browsing and better understand our site traffic.</h1>
+       <div className="flex gap-[35px]" >
+        <button onClick={()=>handleCookie(true)} className="btn btn-outline border-white text-white hover:bg-white hover:text-black rounded-[25px] px-[40px]" >Yes</button>
+        <button onClick={()=>handleCookie(false)} className="btn btn-outline border-white text-white hover:bg-white hover:text-black rounded-[25px] px-[40px]" >No</button>
+        
+        </div>
+      </div>
+      )
+      }
   <HomeSec1/>
   <HomeSec2/>
   <HeadingSec/>

@@ -40,7 +40,7 @@ const HomeSec3 = ({
             alt="mobile"
           />
           <h1 className="text-[clamp(20px,5.2vw,40px)] capitalize">{heading}</h1>
-          <p className="w-[350px] capitalize text-white/50 ">
+          <p className="w-[350px] max-sm:text-start capitalize text-white/50 ">
             {para}
           </p>
           {!item ? (

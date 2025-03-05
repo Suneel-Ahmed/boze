@@ -42,7 +42,7 @@ const HomeSec2 = () => {
   return (
     <div ref={containerRef} className='w-full overflow-x-hidden relative max-md:min-h-fit min-h-screen max-md:py-[10px] py-[40px]  flex justify-center items-center' >
         {/* on scroll slide left to right  */}
-        <div className='flex absolute max-md:top-28 max-sm:top-10 top-48 gap-[100px]' >
+        <div className='flex absolute max-md:top-28 max-sm:top-10 top-48 max-sm:gap-[50px] gap-[100px]' >
             {
                 bgImages && bgImages?.map((val, index) =>(
 
@@ -52,7 +52,7 @@ const HomeSec2 = () => {
         </div>
         <img  loading="lazy" width="500" height="300" src="/images/mobile/6.png " className='w-[clamp(250px,50.4vw,750px)] relative z-10' alt="mobile" />
         {/* on scroll slide right to left  */}
-        <div className='flex absolute max-md:bottom-28 max-sm:bottom-10   bottom-56 gap-[100px]' >
+        <div className='flex absolute max-md:bottom-28 max-sm:bottom-10  max-sm:gap-[50px]  bottom-56 gap-[100px]' >
         {
   bgImages && bgImages?.reverse().map((val, index) => (
     <img
