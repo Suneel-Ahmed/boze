@@ -6,7 +6,7 @@ const PublicPolicy = () => {
           <h1 className="text-white mt-[50px] text-[clamp(16px,2.6vw,50px)] uppercase quicksand">
           Boze Coin Privacy Policy
           </h1>
-          <div className="w-[70%] min-h-fit py-[50px] flex flex-col gap-[50px]  px-[clamp(20px,5.3vw,100px)]  rounded-3xl ">
+          <div className="w-[70%] max-sm:w-[95%] min-h-fit py-[50px] flex flex-col gap-[50px]  px-[clamp(20px,5.3vw,100px)]  rounded-3xl ">
                 <div className='flex flex-col text-white' >
                         <h1 className='text-4xl text-white' >Information We Collect</h1>
                             <div className='mt-[20px] ' >

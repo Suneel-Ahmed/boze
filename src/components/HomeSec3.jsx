@@ -31,7 +31,7 @@ const HomeSec3 = ({
         <div
           className={`flex min-h-fit  ${
             !item ? "order-2 max-lg:order-2" : "order-1 max-lg:order-2"
-          } items-start my-auto flex-col   gap-[10px]`}
+          } items-start max-sm:items-center my-auto flex-col   gap-[10px]`}
         >
           <img
           loading="lazy" width="500" height="300"
@@ -40,7 +40,7 @@ const HomeSec3 = ({
             alt="mobile"
           />
           <h1 className="text-[clamp(20px,5.2vw,40px)] capitalize">{heading}</h1>
-          <p className="w-[350px] max-sm:text-start capitalize text-white/50 ">
+          <p className="w-[350px] max-sm:text-center capitalize text-white/50 ">
             {para}
           </p>
           {!item ? (
