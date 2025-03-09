@@ -235,7 +235,7 @@ facilitate transparent and seamless revenue sharing.</li>
                       <div className='mt-[20px] ' >
                         <h3 className='text-[1.6rem]' > Call to Action</h3>
                           <ul className='list-disc ms-4 mt-2 ' >
-                          <li>nvitation to Join: Boze Coin invites you to become part of a revolutionary model that values
+                          <li>Invitation to Join: Boze Coin invites you to become part of a revolutionary model that values
  your time and engagement. Trust us to deliver a platform where fairness, transparency, and
  user empowerment are at the heart of everything we do. Together, let’s redefine content
  consumption and create a future where everyone benefits from their digital contributions.</li>
