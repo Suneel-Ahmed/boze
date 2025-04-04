@@ -68,14 +68,7 @@ const PublicPolicy = () => {
                            
                             </div>
                 </div>
-                <div className='flex flex-col text-white' >
-                        <h1 className='text-4xl text-white' > Contact Us</h1>
-                            <div className='mt-[20px] ' >
-                                <p>If you have any questions, contact us at tajordermenow@gmail.com or visit https://bozecoin.com.
-                                By using our website, you agree to this Privacy Policy.</p>
-                           
-                            </div>
-                </div>
+            
            
           </div>
         </div>

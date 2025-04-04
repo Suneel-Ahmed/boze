@@ -30,6 +30,13 @@ const HomeSec1 = () => {
       className="ads_video w-full relative h-[90vh] flex flex-col justify-center pb-14   items-center "
     >
      <HomeMainHeading/>
+     <ins className="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3092170199670503"
+     data-ad-slot="2245735401"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+
       <img
         ref={image}
         className="absolute  opacity-10 mb-24 w-[500px] "
