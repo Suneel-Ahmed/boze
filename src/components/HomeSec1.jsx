@@ -54,8 +54,15 @@ const HomeSec1 = () => {
       >
         Launch Boze Coin on Telegram
       </Link>
+      <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-3092170199670503"
+     data-ad-slot="7204216913"></ins>
 
       <div className="w-full p-[2vw] z-20 absolute bottom-0 max-sm:bottom-[70px] flex place-content-center place-items-end">
+       
         <span className="flex flex-col place-content-center place-items-center gap-[2vw] lg:gap-[0.5vw]">
           <p className="text-[#FFFFFF] text-[clamp(10px,0.8vw,15px)] text-center font-light leading-[125%]">
             SCROLL DOWN
