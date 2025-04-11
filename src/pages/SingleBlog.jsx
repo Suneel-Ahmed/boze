@@ -7,7 +7,9 @@ import Loading from "../components/Loading";
 import { Helmet } from "react-helmet-async";
 import { FaRegCopy } from "react-icons/fa6";
 import toast, { Toaster } from 'react-hot-toast';
-
+import GoogleAd1 from "../components/GoogleAd1";
+import GoogleAd2 from "../components/GoogleAd2";
+import GoogleAd3 from "../components/GoogleAd3";
 const SingleBlog = () => {
   const { slug } = useParams();
   const [btn1, setBtn1] = useState(false);
@@ -88,7 +90,11 @@ const handleBtn2 = () => {
           content="Boze Coin, Meme Coin, Alt Coins, Meme vs Alt, Meme Coins are Best to Invest, Best Meme, Best Alt Coins, Best Coins, Best Meme Coins Project, 2025, Best Crypto Investments 2025, High ROI Crypto Projects, Long-Term Crypto Investment, Passive Income Crypto 2025, Best DeFi Investment Strategies, Web3 Investment Opportunities, Cryptocurrency Portfolio Management, Crypto Trading for Beginners, Earn Free Cryptocurrency, Free Bitcoin Earning Sites, Airdrop Crypto 2025, Best Free Airdrops 2025, Watch Videos and Earn Crypto, Earn Bitcoin Watching Ads, Social Media Engagement Rewards, Web3 Task-Based Earning, Play-to-Earn vs Watch-to-Earn, Best Crypto Referral Programs 2025, Passive Income Through Crypto Referrals, Web3 Affiliate Marketing, High-Paying Crypto Referral Programs, New Airdrops with Low Competition, Best Play-to-Earn Crypto Games, Web3 Social Media Rewards, NFT Staking for Passive Income, Play-to-Earn vs Free-to-Earn, Cloud Mining Free Trial, Best Proof-of-Stake Coins, No Deposit Free Crypto, Telegram Airdrops No Gas Fee, Passive Income Crypto Mining, Crypto Faucet List 2025, Upcoming Airdrops 2025, Free Tokens Without Investment, Best Blockchain Airdrops 2025, Crypto Insurance & Risk Management, Best Blockchain-Based Insurance Platforms, Decentralized Finance Insurance, Smart Contract Insurance Solutions, Boze Coin Free Earning, Free Learning & Crypto Rewards, Tap-to-Earn Crypto, Best Crypto Mining Without Investment, Watch and Earn Crypto, Best Staking Coins 2025"
         />
       </Helmet>
-      <div className="w-full min-h-screen flex flex-col  max-lg:px-[clamp(30px,6.7vw,100px)]  gap-[clamp(30px,12.2vw,150px)]  justify-center items-center bg-black">
+      <div className="flex max-lg:flex-col " >
+
+      
+    
+      <div className="w-full lg:w-[80%] min-h-screen flex flex-col  max-lg:px-[clamp(30px,6.7vw,100px)]  gap-[clamp(30px,12.2vw,150px)]  justify-center items-center bg-black">
    
         {/* {blog && blog[0] && <Link to={blog[0]?.button1} className = "btn btn-neutral" >{blog[0]?.action1}</Link>} */}
         {blog &&
@@ -119,6 +125,7 @@ const handleBtn2 = () => {
                   className="content"
                   dangerouslySetInnerHTML={{ __html: val?.content }}
                 />
+                <GoogleAd1/>
                 <div className="flex flex-col items-center gap-[10px]">
                   {blog && blog[0] && (
                     <button
@@ -161,6 +168,14 @@ const handleBtn2 = () => {
             </div>
           ))}
        
+      </div>
+      <div className=" max-lg:hidden w-[20%]  " >
+      <GoogleAd2/>
+    </div>
+      <div className=" max-lg:block mt-3 hidden w-full   " >
+      
+    <GoogleAd3/>
+    </div>
       </div>
     </>
   );

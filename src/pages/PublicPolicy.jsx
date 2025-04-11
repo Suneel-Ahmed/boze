@@ -68,8 +68,49 @@ const PublicPolicy = () => {
                            
                             </div>
                 </div>
-            
-           
+                <div className='flex flex-col text-white' >
+                        <h1 className='text-4xl text-white' > Advertisements :</h1>
+                            <div className='mt-[20px] ' >
+                                <p>Ads may be shown by third-party partners:
+The advertisements on our website are sometimes provided by external advertising partners, not directly by Boze Coin.
+</p>
+                           
+                            </div>
+                </div>
+                <div className='flex flex-col text-white' >
+                        <h1 className='text-4xl text-white' > Cookies :</h1>
+                            <div className='mt-[20px] ' >
+                                <p>Cookies may be used by advertisers:
+These advertising partners may place cookies on your device to track your interaction with ads.
+
+</p>
+                           
+                            </div>
+                </div>
+                <div className='flex flex-col text-white' >
+                        <h1 className='text-4xl text-white' > Purpose of cookies:</h1>
+                            <div className='mt-[20px] ' >
+                                <p>Cookies help the ad servers recognize your device every time they display an ad. This helps collect information such as your browsing behavior and preferences.
+
+
+</p>
+                           
+                            </div>
+                </div>
+                <div className='flex flex-col text-white' >
+                        <h1 className='text-4xl text-white' > Targeted advertising:</h1>
+                            <div className='mt-[20px] ' >
+                                <p>The information gathered through cookies may be used by ad networks to show you personalized or targeted ads they believe you’re more likely to be interested in.</p>
+                           
+                            </div>
+                </div>
+                <div className='flex flex-col text-white' >
+                        <h1 className='text-4xl text-white' > Boze Coin's cookie policy scope:</h1>
+                            <div className='mt-[20px] ' >
+                                <p>Our privacy policy explains how Boze Coin uses cookies on our website, but it does not apply to cookies or data collection done by advertisers.</p>
+                           
+                            </div>
+                </div>
           </div>
         </div>
   )

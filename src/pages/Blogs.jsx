@@ -81,7 +81,7 @@ const Blogs = () => {
                 </Link>
                 <div className="w-full h-[1px] bg-white/40 max-w-[1200px] rounded-3xl max-md:mt-0 mt-auto"></div>
               </div>
-          
+              
       
             </div>
           ))}
