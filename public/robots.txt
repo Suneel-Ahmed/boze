@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /blogs
-Allow: /support
-Allow: /collab
+Sitemap: https://bozecoin.com/sitemap.xml

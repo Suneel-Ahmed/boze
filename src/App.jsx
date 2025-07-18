@@ -13,7 +13,7 @@ import Loading from './components/Loading';
 import PublicPolicy from './pages/PublicPolicy';
 import WhitePaper from './pages/WhitePaper';
 
-
+// import routes from './routes';
 
 const App = () => {
   useSmoothScroll();
